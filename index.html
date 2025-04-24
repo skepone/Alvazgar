@@ -1,0 +1,45 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Turnos de Descanso</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "react": "https://cdn.jsdelivr.net/npm/react@18/umd/react.development.js",
+            "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.development.js"
+        }
+    }
+    </script>
+    
+    <!-- Módulos de utilidades -->
+    <script type="text/babel" data-type="module" src="js/utils/uuid.js"></script>
+    <script type="text/babel" data-type="module" src="js/utils/timeUtils.js"></script>
+    
+    <!-- Servicios -->
+    <script type="text/babel" data-type="module" src="js/services/breakService.js"></script>
+    <script type="text/babel" data-type="module" src="js/services/logService.js"></script>
+    
+    <!-- Componentes -->
+    <script type="text/babel" data-type="module" src="js/components/ConfirmationModal.js"></script>
+    <script type="text/babel" data-type="module" src="js/components/SaveIndicator.js"></script>
+    <script type="text/babel" data-type="module" src="js/components/BreakRequestForm.js"></script>
+    <script type="text/babel" data-type="module" src="js/components/ActiveBreaks.js"></script>
+    <script type="text/babel" data-type="module" src="js/components/PendingBreaks.js"></script>
+    <script type="text/babel" data-type="module" src="js/components/CompletedBreaks.js"></script>
+    <script type="text/babel" data-type="module" src="js/components/LogsView.js"></script>
+    <script type="text/babel" data-type="module" src="js/components/UserGuideModal.js"></script>
+    
+    <!-- Aplicación principal -->
+    <script type="text/babel" data-type="module" src="app.js"></script>
+</body>
+</html>
